@@ -1,2 +1,6 @@
+#NEWS APP
 # app-dev-74
-devtrack cycle 7
+frontend: Kotlin, navigation component
+back-end: Retrofit, ROOM
+architecture: MVVM
+concurrency Tool: Coroutines
