@@ -12,9 +12,9 @@ class _HomeState extends State<Home>{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(
+        title: const Row(
           children: [Text("News"),Text("Nest", style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold )
-          )
+          ),
           ],
         ),
       ),
