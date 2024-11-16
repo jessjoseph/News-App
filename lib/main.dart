@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:newsnest/lib/view/home.dart';
+import 'package:untitled/view/home.dart';
+
 
 
 void main() {
