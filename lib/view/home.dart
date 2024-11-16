@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/controller/fetchNews.dart';
-import 'package:untitled/model/newsArt.dart';
-import 'package:untitled/view/widget/NewsContainer.dart';
+import 'package:news_snack/controller/fetchNews.dart';
+import 'package:news_snack/model/newsArt.dart';
+import 'package:news_snack/view/widget/NewsContainer.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,6 +9,7 @@ class HomeScreen extends StatefulWidget {
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
+
 class _HomeScreenState extends State<HomeScreen> {
   bool isLoading = true;
 
