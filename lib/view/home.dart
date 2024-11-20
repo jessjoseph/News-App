@@ -32,7 +32,6 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-
       body: PageView.builder(
           controller: PageController(initialPage: 0),
           scrollDirection: Axis.vertical,
