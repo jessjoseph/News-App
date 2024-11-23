@@ -3,6 +3,8 @@ import 'package:untitled/controller/fetchNews.dart';
 import 'package:untitled/model/newsArt.dart';
 import 'package:untitled/view/widget/NewsContainer.dart';
 
+import 'NewsContainer.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 

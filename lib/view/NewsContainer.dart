@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/view/detail_view.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 
 class NewsContainer extends StatelessWidget {

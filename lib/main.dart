@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled/view/spalsh.dart';
 import 'package:untitled/view/home.dart';
 
 
