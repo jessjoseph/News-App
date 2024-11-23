@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/controller/fetchNews.dart';
-import 'package:untitled/model/newsArt.dart';
-import 'package:untitled/view/widget/NewsContainer.dart';
+import 'package:news_nest/controller/fetchNews.dart';
+import 'package:news_nest/model/newsArt.dart';
+import 'package:news_nest/view/widget/NewsContainer.dart';
+
+import 'NewsContainer.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -31,7 +33,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
 
       body: PageView.builder(
           controller: PageController(initialPage: 0),
