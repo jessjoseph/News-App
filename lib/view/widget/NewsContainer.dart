@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_nest/view/detail_view.dart';
+import 'package:untitled/view/detail_view.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
