@@ -1,9 +1,6 @@
-
 import 'package:equatable/equatable.dart';
-
 import 'package:news_nest/models/categories_new_model.dart';
 import 'package:news_nest/models/news_channel_headlines_model.dart';
-
 
 enum Status { initial, success, failure }
 

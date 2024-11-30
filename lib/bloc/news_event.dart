@@ -6,12 +6,11 @@ abstract class NewsEvent extends Equatable {
 }
 
 class FetchNewsChannelHeadlines extends NewsEvent {
-  final String channelId ;
+  final String channelId;
   FetchNewsChannelHeadlines(this.channelId);
 }
 
-
 class NewsCategories extends NewsEvent {
-  final String category ;
+  final String category;
   NewsCategories(this.category);
 }

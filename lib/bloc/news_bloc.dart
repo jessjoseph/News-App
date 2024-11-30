@@ -1,20 +1,14 @@
-
-
 import 'package:bloc/bloc.dart';
 import 'package:news_nest/bloc/news_event.dart';
 import 'package:news_nest/bloc/news_states.dart';
 import 'package:news_nest/repository/news_repository.dart';
-
-import 'package:news_nest/models/categories_new_model.dart';
-import 'package:news_nest/models/news_channel_headlines_model.dart';
-
 
 class NewsBloc extends Bloc<NewsEvent , NewsState> {
   NewsRepository postRepository  = NewsRepository();
 
   NewsBloc() :super(NewsState()){
     on<FetchNewsChannelHeadlines>(fetchChannelNews);
-    on<NewsCategories>(fetchNewsCategoires);
+    on<NewsCategories>(fetchNewsCategories);
 
   }
 
@@ -40,11 +34,11 @@ class NewsBloc extends Bloc<NewsEvent , NewsState> {
     });
   }
 
-  Future<void> fetchNewsCategoires(NewsCategories event, Emitter<NewsState> emit)async {
+  Future<void> fetchNewsCategories(NewsCategories event, Emitter<NewsState> emit)async {
 
     emit(state.copyWith(status: Status.initial));
 
-    await postRepository.fetchNewsCategoires(event.category).then((value){
+    await postRepository.fetchNewsCategories(event.category).then((value){
       emit(
           state.copyWith(
               categoriesStatus: Status.success ,
